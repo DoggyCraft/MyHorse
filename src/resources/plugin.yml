@@ -1,7 +1,7 @@
 name: MyHorse
 main: com.dogonfire.myhorse.MyHorse
 author: DogOnFire
-version: 0.3.4
+version: 0.4.0
 api-version: 1.16
 description: Horse Control for Minecraft!
 website: http://dev.bukkit.org/server-mods/myhorse
@@ -36,18 +36,14 @@ permissions:
             myhorse.unlock: true
             myhorse.addfriend: true
             myhorse.removefriend: true
-    myhorse.purge:
-        description: Player can purge horses owned by players who has not been online for some time
-        default: false        
+            myhorse.chest: true
+            myhorse.removechest: true
     myhorse.updates:
         description: Player will see update notifications
         default: false        
     myhorse.setchest:
         description: Allows a player to set a chest on his horse
-        default: true        
-    myhorse.setpublic:
-        description: Allows a player to set his horse as public access
-        default: true        
+        default: true              
     myhorse.info:
         description: Allows a player to see info about his horse
         default: true
@@ -63,7 +59,7 @@ permissions:
     myhorse.select:
         description: Allows a player to select his owned horse
         default: true
-    myhorse.bypass.inventory:
+    myhorse.bypass.chest:
         description: Allows a player to access inventory of any horse
         default: false
     myhorse.bypass.leash:
@@ -119,4 +115,11 @@ permissions:
         default: true
     myhorse.help:
         description: Allows player to see the help page
-        default: true    
+        default: true
+    myhorse.chest:
+        description: Allows player to see the horse's inventory if it is carrying a chest
+        default: true
+    myhorse.removechest:
+        description: Allows player to remove the chest from the horse
+        default: true
+         
